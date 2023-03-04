@@ -1,50 +1,55 @@
-# My-final-project
-Проект: вариант 3
-Представьте, что вы работаете в крупном дейтинговом приложении.
+# final-course-project-DA
 
-Помимо базовых функций, в приложении также имеется премиум-подписка, которая дает доступ к ряду важных дополнительных возможностей. Был проведен A/B тест, в рамках которого для новых пользователей из нескольких стран была изменена стоимость премиум-подписки* при покупке через две новые платежные системы. При этом стоимость пробного периода оставалась прежней.
+This is an academic project, implemented by us as a final project, upon completion of the Data Analyst course (educational resource https://karpov.courses).
+In the course of the project, we used exploratory data analysis, parametric and nonparametric methods, bootstrapping, correlation analysis, multivariate  analysis of variance, ect.
 
-Проверьте:
+**The introductory information is as follows:**
 
-Был ли эксперимент успешен в целом.
-Проанализируйте, имеет ли нововведение смысл среди каких-либо конкретных групп пользователей.
-Деньги за подписку списываются ежемесячно до тех пор, пока пользователь её не отменит.
+Imagine that you work for a large dating app.
 
-Данные
-Всего есть три группы: тестовая (test), контрольная 1 (control_1) и контрольная 2 (control_2). Для каждой из них:
+In addition to the basic functions, the application also has a premium subscription, which gives you access to a number of important additional features. An A/B test was conducted, in which for new users from several countries, the cost of a premium subscription * was changed when buying through two new payment systems. At the same time, the cost of the trial period remained the same.
 
-users_*.csv – информация о пользователях:
+_*Subscription money is charged monthly until the user cancels it._
 
-uid – идентификатор пользователя
-age – возраст
-attraction_coeff – коэффициент привлекательности (от 0 до 1000, {лайки}\{просмотры}*1000) 
-coins – число монеток (внутренняя валюта)
-country – страна  
-visit_days – в какие дни после регистрации пользователь посещал приложение (напр. в 1, затем в 7)
-gender – пол
-age_filter_start  – фильтр поиска, мин. значение 
-age_filter_end  – фильтр поиска, макс. значение 
-views_count – число полученных оценок 
-was_premium – был ли когда-либо премиум (либо пробный период премиум-статуса, либо купленный за деньги)
-is_premium –  является ли премиум
-total_revenue – нормированная выручка
+**Check:**
+  1) Was the experiment successful overall?
+  2) Analyze whether the innovation makes sense among any specific user groups.
 
-transactions_*.csv – информация о платежах пользователей:
+**Data**\
+There are three groups in total: test (**test**), control 1 (**control_1**), control 2 (**control_2**).\
+For each of them:
 
-uid – идентификатор пользователя
-country – страна
-joined_at – дата и время регистрации
-paid_at – дата и время покупки
-revenue – нормированная выручка
-payment_id – идентификатор платежа
-from_page – откуда пользователь перешел на страницу оплаты
-product_type – тип продукта (trial_premium – пробная премиум-подписка, premium_no_trial – премиум-подписка без пробной, coins – подписка за внутреннюю валюту, other_type – другое)
+**users_*.csv** - information about users:\
+        **uid** - user ID;\
+        **age** - age;\
+        **attraction_coeff** – attraction coefficient (from 0 to 1000, (likes / views) * 1000);\
+        **coins** - number of coins (local currency);\
+        **country** - country;\
+        **visit_days** - on which days after registration the user visited the application (for example, at 1, then at 7);\
+        **gender** - gender;\
+        **age_filter_start** – search filter, min. meaning;\
+        **age_filter_end** - search filter, max. meaning;\
+        **views_count** - number of views received;\
+        **was_premium** - whether there was ever a premium (either a trial period of premium status, or bought for money);\
+        **is_premium** - whether premium;\
+        **total_revenue** - normalized revenue.
+ 
+**transactions_*.csv** – information about user payments:\
+        **uid** - user ID;\
+        **country** - country;\
+        **joined_at** - date and time of registration;\
+        **paid_at** - date and time of purchase;\
+        **revenue** - normalized revenue;\
+        **payment_id** - payment ID;\
+        **from_page** - from where the user went to the payment page;\
+        **product_type** - product type (_trial_premium_ - trial premium subscription, _premium_no_trial_ - premium subscription without trial, _coins_ - subscription for local currency, _other_type_ - other).
+ 
+**Files:**
 
-Файлы:
+**users_test** - information about users in the test group;\
+**users_control_1** - information about users in the first control group;\
+**users_control_2** - information about users in the second control group;\
+**transactions_test** - information about user payments in the test group;\
+**transactions_control_1** – information about user payments in the first control group;\
+**transactions_control_2** - information about user payments in the second control group.
 
-users_test – информация о пользователях в тестовой группе
-users_control_1 – информация о пользователях в первой контрольной группе
-users_control_2 – информация о пользователях во второй контрольной группе 
-transactions_test – информация о платежах пользователей в тестовой группе
-transactions_control_1 – информация о платежах пользователей в первой контрольной группе
-transactions_control_2 – информация о платежах пользователей во второй контрольной группе 
