@@ -13,7 +13,7 @@ _*Subscription money is charged monthly until the user cancels it._
 
 **Check:**
   1) Was the experiment successful overall?
-  2) Analyze whether the innovation makes sense among any specific user groups.
+  2) Analyze whether the innovation makes sense among any specific user groups?
 
 **Data**\
 There are three groups in total: test (**test**), control 1 (**control_1**), control 2 (**control_2**).\
