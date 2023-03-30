@@ -53,3 +53,9 @@ For each of them:
 **transactions_control_1** – information about user payments in the first control group;\
 **transactions_control_2** - information about user payments in the second control group.
 
+**users_test** : https://disk.yandex.ru/d/4XXIME4osGrMRA  \
+**users_control_1** : https://disk.yandex.ru/d/yJFydMNNGkEKfg  \
+**users_control_2** : https://disk.yandex.ru/d/br6KkQupzzTGoQ  \
+**transactions_test** : https://disk.yandex.ru/d/gvCWpZ55ODzs2g  \
+**transactions_control_1** : https://disk.yandex.ru/d/VY5W0keMX5TZBQ  \
+**transactions_control_2** : https://disk.yandex.ru/d/th5GL0mGOc-qzg 
